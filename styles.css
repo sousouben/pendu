@@ -83,7 +83,7 @@ button {
   }
 }
 
-@media (max-width: 773px) {
+@media (max-width: 550px) {
   .container {
     height: 300px;
     width: 400px;
