@@ -82,3 +82,10 @@ button {
     transform: translateY(-200px) rotate(90deg);
   }
 }
+
+@media (max-width: 773px) {
+  .container {
+    height: 300px;
+    width: 400px;
+  }
+}
