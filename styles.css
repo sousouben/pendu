@@ -89,3 +89,10 @@ button {
     width: 433px;
   }
 }
+
+@media (max-width: 449px) {
+  .container {
+    height: 363px;
+    width: 378px;
+  }
+}
