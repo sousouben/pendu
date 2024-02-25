@@ -9,7 +9,7 @@
 body {
   margin: 37px auto;
   height: 100vh;
-  background: url("bg.jpg");
+  background: url("images/bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,8 +22,13 @@ h1 {
   margin-top: 10px;
   text-shadow: 0px 1px 3px black;
 }
-.score {
-  margin-right: 100px;
+.score,
+.time {
+  margin-right: 30px;
+}
+
+#difficulty {
+  border-radius: 6px;
 }
 .game {
   display: flex;
@@ -56,25 +61,24 @@ h1 {
   overflow: hidden;
 }
 
-#target {
-  height: 60px;
-  width: 60px;
+#target,
+#loseImage {
+  width: 10%;
   position: absolute;
   transition: 0.25s;
   animation: animateTarget 10s infinite;
 }
 
+img {
+  width: 50%;
+}
+
 button {
-  padding: 10px 20px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: transparent;
   border: 0;
-  color: black;
-  border-radius: 6px;
   cursor: pointer;
-  font-weight: 400;
-  font-size: 20px;
-  box-shadow: 0px 2px 2px black;
+  width: 12%;
 }
 
 @keyframes animateTarget {
@@ -83,16 +87,34 @@ button {
   }
 }
 
+@media (max-width: 800px) {
+  body {
+    margin: 0px auto;
+  }
+  .container {
+    height: 371px;
+  }
+
+  button {
+    width: 16%;
+  }
+}
 @media (max-width: 550px) {
   .container {
-    height: 366px;
-    width: 433px;
+    height: 336px;
+    width: 361px;
+  }
+  .game_infos {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 434px) {
   .container {
-    height: 363px;
-    width: 378px;
+    height: 321px;
+    width: 325px;
+  }
+  .game_infos {
+    font-size: 16px;
   }
 }

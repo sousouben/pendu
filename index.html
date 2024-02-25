@@ -14,10 +14,18 @@
     </header>
     <main>
       <div class="game">
-        <button class="start_btn">start / restart</button>
+        <button class="start_btn">
+          <img class="img_start" src="images/start.png" alt="bouton start" />
+        </button>
         <div class="game_infos">
           <span class="score">score : 0</span>
-          <span class="time"> temps : 0</span>
+          <span class="time">temps : 0</span>
+          <label for="difficulty">Difficulté :</label>
+          <select id="difficulty" name="difficulty">
+            <option value="easy">Facile</option>
+            <option value="medium" selected>Moyen</option>
+            <option value="hard">Difficile</option>
+          </select>
         </div>
         <div class="container"></div>
       </div>
@@ -25,6 +33,12 @@
     <footer>
       <audio id="backgroundMusic" loop>
         <source src="musique.mp3" type="audio/mpeg" />
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+      <audio id="winSound" src="winSound.mp3">
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+      <audio id="loseSound" src="loseSound.mp3">
         Votre navigateur ne supporte pas l'élément audio.
       </audio>
     </footer>
