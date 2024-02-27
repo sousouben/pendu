@@ -7,12 +7,13 @@
   box-sizing: border-box;
 }
 body {
-  margin: 37px auto;
+  margin: auto;
   height: 100vh;
   background: url("images/bg.jpg");
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 h1 {
@@ -63,7 +64,7 @@ h1 {
 
 #target,
 #loseImage {
-  width: 10%;
+  width: 15%;
   position: absolute;
   transition: 0.25s;
   animation: animateTarget 10s infinite;
@@ -96,7 +97,7 @@ button {
   }
 
   button {
-    width: 16%;
+    width: 18%;
   }
 }
 @media (max-width: 550px) {
